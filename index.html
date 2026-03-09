@@ -1,736 +1,337 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechniFroid&Cuisine - Expert Climatisation & Cuisines Professionnelles en PACA</title>
-    <meta name="description" content="Installation, dépannage et entretien de climatisation et équipements de cuisines professionnelles. Service 24/7 en région PACA. Basé à Aix-en-Provence.">
-    ‹meta name=" robots" content="index, follow, max-image-preview: large, max-snippet:-1, max-video-preview:-1">
-‹meta name="googlebot" content="index, follow">
-‹meta name="keywords" content="climatisation, cuisines professionnelles, Aix-en-Provence, PACA, installation climatisation, dépannage, entretien, réfrigération">
-<link rel="canonical"
-href="http://www.technifroidcuisine.fr">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <style>
-        /* Animation pour le smooth scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Custom animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.6s ease-out;
-        }
-        
-        /* Pulse animation pour l'indicateur */
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        
-        .animate-pulse-custom {
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-        
-        /* Style pour le logo texte */
-        .logo-gradient {
-            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        /* Hover effects */
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechniFroid&Cuisine | Climatisation & cuisines professionnelles en PACA</title>
+  <meta name="description" content="TechniFroid&Cuisine assure l'installation, le dépannage et l'entretien de climatiseurs, chambres froides et équipements de cuisines professionnelles à Aix-en-Provence et dans toute la région PACA.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="https://technifroidcuisine.fr/">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="TechniFroid&Cuisine | Climatisation & cuisines professionnelles en PACA">
+  <meta property="og:description" content="Installation, dépannage et entretien de climatiseurs et équipements de cuisines professionnelles en PACA.">
+  <meta property="og:url" content="https://technifroidcuisine.fr/">
+  <meta property="og:image" content="https://technifroidcuisine.fr/assets/hero-kitchen.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" as="image" href="assets/hero-kitchen.webp">
+  <link rel="preload" as="image" href="assets/hero-clim.webp">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"TechniFroid&Cuisine",
+    "image":"https://technifroidcuisine.fr/assets/logo.webp",
+    "url":"https://technifroidcuisine.fr/",
+    "telephone":"+33640140733",
+    "email":"contact@technifroidcuisine.fr",
+    "areaServed":"Provence-Alpes-Côte d'Azur",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Aix-en-Provence",
+      "addressRegion":"PACA",
+      "addressCountry":"FR"
+    },
+    "description":"Installation, dépannage et entretien de climatiseurs, froid commercial et équipements de cuisines professionnelles.",
+    "sameAs":[]
+  }
+  </script>
 </head>
-<body class="bg-white">
-    
-    <!-- HEADER -->
-    <header id="header" class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Top bar with contact info -->
-            <div class="hidden md:flex justify-end items-center py-2 text-sm border-b border-gray-200">
-                <div class="flex items-center gap-6 text-gray-600">
-                    <a href="tel:0640140733" class="flex items-center gap-2 hover:text-blue-600 transition-colors">
-                        <i data-lucide="phone" class="w-4 h-4"></i>
-                        <span>06 40 14 07 33</span>
-                    </a>
-                    <a href="mailto:contact@technifroidcuisine.fr" class="hover:text-blue-600 transition-colors">
-                        contact@technifroidcuisine.fr
-                    </a>
-                </div>
-            </div>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Basé à Aix-en-Provence · Intervention dans toute la région PACA</span>
+      <a href="tel:0640140733">Urgence & devis : 06 40 14 07 33</a>
+    </div>
+  </div>
 
-            <!-- Main navigation -->
-            <nav class="flex justify-between items-center py-4">
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                        <i data-lucide="wind" class="w-7 h-7 text-white"></i>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-xl font-bold text-gray-900">TechniFroid&Cuisine</span>
-                        <span class="text-xs text-gray-600">Climatisation & Cuisine Pro</span>
-                    </div>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#accueil" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Accueil</a>
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
-                    <a href="#apropos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">À propos</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
-                    <a href="#contact" class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 h-10 px-6 transition-colors">
-                        Devis gratuit
-                    </a>
-                </div>
-
-                <!-- Mobile menu button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
-            </nav>
-
-            <!-- Mobile Navigation -->
-            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-200">
-                <div class="flex flex-col space-y-4 pt-4">
-                    <a href="tel:0640140733" class="flex items-center gap-2 text-gray-700 hover:text-blue-600">
-                        <i data-lucide="phone" class="w-4 h-4"></i>
-                        <span>06 40 14 07 33</span>
-                    </a>
-                    <a href="#accueil" class="text-gray-700 hover:text-blue-600 transition-colors font-medium mobile-menu-link">Accueil</a>
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors font-medium mobile-menu-link">Services</a>
-                    <a href="#apropos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium mobile-menu-link">À propos</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors font-medium mobile-menu-link">Contact</a>
-                    <a href="#contact" class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 h-10 px-6 transition-colors mobile-menu-link">
-                        Devis gratuit
-                    </a>
-                </div>
-            </div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#accueil" class="brand" aria-label="Accueil TechniFroid&Cuisine">
+        <img src="assets/logo.webp" alt="Logo TechniFroid&Cuisine">
+        <div>
+          <strong>TechniFroid&amp;Cuisine</strong>
+          <span>Climatisation & cuisines professionnelles</span>
         </div>
-    </header>
+      </a>
 
-    <!-- HERO SECTION -->
-    <section id="accueil" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 to-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8 fade-in">
-                    <div class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
-                        Disponible 7j/7 pour vos urgences
-                    </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                        Expert en Climatisation & Cuisines Professionnelles
-                    </h1>
-                    <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
-                        Installation, dépannage et entretien de climatisation et d'équipements de cuisines professionnelles. 
-                        Intervention rapide en région PACA et Aix-en-Provence.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:0640140733" class="inline-flex items-center justify-center rounded-md text-lg font-medium bg-blue-600 text-white hover:bg-blue-700 h-12 px-8 transition-colors">
-                            <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
-                            06 40 14 07 33
-                        </a>
-                        <a href="#contact" class="inline-flex items-center justify-center rounded-md text-lg font-medium border border-gray-300 bg-white hover:bg-gray-100 h-12 px-8 transition-colors">
-                            Demander un devis
-                            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
-                        </a>
-                    </div>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
 
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
-                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
-                            <div class="text-2xl font-bold text-blue-600">5+</div>
-                            <div class="text-sm text-gray-600">Ans d'expérience</div>
-                        </div>
-                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
-                            <div class="text-2xl font-bold text-blue-600">24/7</div>
-                            <div class="text-sm text-gray-600">Disponibilité</div>
-                        </div>
-                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
-                            <div class="text-2xl font-bold text-blue-600">100%</div>
-                            <div class="text-sm text-gray-600">Satisfaction</div>
-                        </div>
-                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
-                            <div class="text-2xl font-bold text-blue-600">Certifié</div>
-                            <div class="text-sm text-gray-600">RGE QualiPAC</div>
-                        </div>
-                    </div>
-                </div>
+      <nav id="main-nav" class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#zone">Zone d'intervention</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-nav" href="tel:0640140733">Appeler</a>
+      </nav>
+    </div>
+  </header>
 
-                <div class="relative fade-in">
-                    <div class="grid grid-cols-1 gap-4">
-                        <div class="aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1678616143792-77d4091e9bbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhaXIlMjBjb25kaXRpb25pbmclMjB1bml0JTIwaW5zdGFsbGF0aW9ufGVufDF8fHx8MTc3MjYyNTM3N3ww&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Installation climatisation moderne" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1771360963016-1408c2de12c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjb21tZXJjaWFsJTIwa2l0Y2hlbiUyMGVxdWlwbWVudHxlbnwxfHx8fDE3NzI2MjUzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Cuisines professionnelles modernes" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                    <!-- Floating card -->
-                    <div class="absolute bottom-6 left-6 right-6 bg-white p-4 rounded-xl shadow-xl">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-sm text-gray-600">Intervention rapide</p>
-                                <p class="text-lg font-bold text-gray-900">En moins de 2h</p>
-                            </div>
-                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse-custom"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <main id="accueil">
+    <section class="hero">
+      <div class="hero-bg hero-bg-left"></div>
+      <div class="hero-bg hero-bg-right"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Installation · Dépannage · Entretien</p>
+          <h1>Le froid, la climatisation et la cuisine professionnelle, avec une exécution haut de gamme.</h1>
+          <p class="hero-text">
+            TechniFroid&amp;Cuisine accompagne les professionnels et particuliers pour des installations fiables, des dépannages rapides et un entretien rigoureux, à Aix-en-Provence et partout en PACA.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:0640140733">06 40 14 07 33</a>
+            <a class="btn btn-secondary" href="#contact">Demander un devis</a>
+          </div>
+          <ul class="hero-points">
+            <li>Intervention rapide</li>
+            <li>Climatisation & froid commercial</li>
+            <li>Cuisines professionnelles</li>
+          </ul>
         </div>
+
+        <aside class="hero-card">
+          <div class="hero-card-top">
+            <span class="badge">Disponible en PACA</span>
+            <span class="rating">Installation · SAV · Maintenance</span>
+          </div>
+          <h2>Un interlocuteur unique pour vos équipements techniques</h2>
+          <p>Climatiseurs, chambres froides, lignes inox, cuisines de restauration, maintenance préventive et dépannage.</p>
+          <div class="hero-metrics">
+            <article>
+              <strong>PACA</strong>
+              <span>Zone couverte</span>
+            </article>
+            <article>
+              <strong>Pro</strong>
+              <span>Approche terrain</span>
+            </article>
+            <article>
+              <strong>24/7</strong>
+              <span>Selon urgence</span>
+            </article>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!-- SERVICES SECTION -->
-    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-                    Nos expertises
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Nos Services
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Des solutions complètes pour tous vos besoins en climatisation et équipement de cuisines professionnelles en région PACA
-                </p>
-            </div>
-
-            <div class="w-full">
-                <div class="flex justify-center mb-12">
-                    <div class="inline-flex bg-white rounded-xl p-1 shadow-lg border border-gray-200">
-                        <button id="tab-climatisation" class="tab-btn px-8 py-3 rounded-lg font-semibold transition-all bg-blue-600 text-white shadow-md">
-                            Climatisation
-                        </button>
-                        <button id="tab-cuisine" class="tab-btn px-8 py-3 rounded-lg font-semibold transition-all text-gray-600 hover:text-gray-900">
-                            Cuisine Pro
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Climatisation Services -->
-                <div id="services-climatisation" class="services-content grid md:grid-cols-2 gap-8">
-                    <!-- Service 1 -->
-                    <div class="card-hover bg-white rounded-lg border-2 border-gray-200 hover:border-blue-200 overflow-hidden shadow-md">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1678616143792-77d4091e9bbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhaXIlMjBjb25kaXRpb25pbmclMjB1bml0JTIwaW5zdGFsbGF0aW9ufGVufDF8fHx8MTc3MjYyNTM3N3ww&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Installation de climatisation" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="wind" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Installation de climatisation</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Installation professionnelle de systèmes de climatisation résidentiels et commerciaux, adaptés à vos besoins et au climat de la région PACA.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="card-hover bg-white rounded-lg border-2 border-gray-200 hover:border-blue-200 overflow-hidden shadow-md">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1758774522618-6997310e9638?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaXIlMjBjb25kaXRpb25pbmclMjByZXBhaXIlMjBzZXJ2aWNlfGVufDF8fHx8MTc3MjYyNTM3OHww&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Dépannage rapide" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="wrench" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Dépannage rapide</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Intervention rapide 7j/7 pour tous vos problèmes de climatisation. Diagnostic précis et réparation efficace sur Aix et toute la région.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="card-hover bg-white rounded-lg border-2 border-gray-200 hover:border-blue-200 overflow-hidden shadow-md">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1667892702941-e9ef2cf6ee5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxodmFjJTIwbWFpbnRlbmFuY2UlMjBjbGVhbmluZyUyMGZpbHRlcnxlbnwxfHx8fDE3NzI2MjUzNzl8MA&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Entretien régulier" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="settings" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Entretien régulier</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Contrats d'entretien annuel pour garantir la performance et la longévité de vos équipements. Nettoyage, contrôle et optimisation.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="card-hover bg-white rounded-lg border-2 border-gray-200 hover:border-blue-200 overflow-hidden shadow-md">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1770625467384-304e461ef1be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmVyZ3klMjBlZmZpY2llbnQlMjB0aGVybW9zdGF0fGVufDF8fHx8MTc3MjYyNTM3OXww&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Optimisation énergétique" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="thermometer" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Optimisation énergétique</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Amélioration des performances énergétiques de vos installations pour réduire vos coûts et votre impact environnemental.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cuisine Services -->
-                <div id="services-cuisine" class="services-content hidden grid md:grid-cols-2 gap-8">
-                    <!-- Service 1 -->
-                    <div class="card-hover bg-white rounded-lg border-2 border-gray-200 hover:border-blue-200 overflow-hidden shadow-md">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1749478072094-d21cb929490c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwa2l0Y2hlbiUyMHN0YWlubGVzcyUyMHN0ZWVsfGVufDF8fHx8MTc3MjUxNDc0MHww&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Équipement de cuisine pro" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="chef-hat" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Équipement de cuisine pro</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Installation complète d'équipements de cuisines professionnelles : fours, plaques, hottes, chambres froides pour restaurants et hôtels.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="card-hover bg-white rounded-lg border-2 border-gray-200 hover:border-blue-200 overflow-hidden shadow-md">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1721987070934-d06654c35040?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwd2Fsay1pbiUyMHJlZnJpZ2VyYXRvciUyMGZyZWV6ZXJ8ZW58MXx8fHwxNzcyNjI1Mzg0fDA&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Systèmes de réfrigération" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="snowflake" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Systèmes de réfrigération</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Installation et maintenance de chambres froides, vitrines réfrigérées et armoires de conservation pour professionnels.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="card-hover bg-white rounded-lg border-2 border-gray-200 hover:border-blue-200 overflow-hidden shadow-md">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1647481837638-ebf6d2a060ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwZXF1aXBtZW50JTIwdGVjaG5pY2lhbiUyMG1haW50ZW5hbmNlfGVufDF8fHx8MTc3MjYyNTM4MHww&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Maintenance préventive" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="clock" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Maintenance préventive</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Entretien régulier de vos équipements pour éviter les pannes et garantir l'hygiène alimentaire selon les normes HACCP.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="card-hover bg-white rounded-lg border-2 border-gray-200 hover:border-blue-200 overflow-hidden shadow-md">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1712885609367-3d49c2e0fae8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWZldHklMjBpbnNwZWN0aW9uJTIwY2hlY2tsaXN0JTIwY2xpcGJvYXJkfGVufDF8fHx8MTc3MjYyNTM4MHww&ixlib=rb-4.1.0&q=80&w=1080" 
-                                 alt="Mise aux normes" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="shield-check" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Mise aux normes</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Contrôle et mise en conformité de vos installations selon les normes en vigueur. Certification et accompagnement administratif.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="trust">
+      <div class="container trust-grid">
+        <article>
+          <strong>Interventions réactives</strong>
+          <p>Nous privilégions la rapidité d'action et une remise en service efficace.</p>
+        </article>
+        <article>
+          <strong>Finition soignée</strong>
+          <p>Un rendu propre, durable et conforme aux exigences des environnements professionnels.</p>
+        </article>
+        <article>
+          <strong>Double expertise</strong>
+          <p>Climatisation, froid commercial et équipements de cuisine professionnelle.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="apropos" class="py-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1">
-                    <div class="aspect-video rounded-2xl overflow-hidden shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1771360963016-1408c2de12c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjb21tZXJjaWFsJTIwa2l0Y2hlbiUyMGVxdWlwbWVudHxlbnwxfHx8fDE3NzI2MjUzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080" 
-                             alt="Cuisines professionnelles modernes" 
-                             class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <div class="order-1 md:order-2 space-y-6">
-                    <h2 class="text-4xl font-bold text-gray-900">
-                        TechniFroid&Cuisine, votre partenaire de confiance
-                    </h2>
-                    <p class="text-lg text-gray-600">
-                        Depuis plus de 5 ans, nous sommes spécialisés dans l'installation, le dépannage 
-                        et l'entretien de systèmes de climatisation et d'équipements de cuisines professionnelles 
-                        dans toute la région PACA.
-                    </p>
-                    <p class="text-lg text-gray-600">
-                        Basé à Aix-en-Provence, notre équipe de techniciens certifiés intervient auprès des particuliers, restaurants, 
-                        hôtels et entreprises pour garantir le confort thermique et la performance de vos équipements.
-                    </p>
-                    <div class="grid grid-cols-2 gap-8 pt-8">
-                        <div>
-                            <div class="text-4xl font-bold text-blue-600 mb-2">200+</div>
-                            <div class="text-gray-600">Clients satisfaits</div>
-                        </div>
-                        <div>
-                            <div class="text-4xl font-bold text-blue-600 mb-2">5+</div>
-                            <div class="text-gray-600">Années d'expérience</div>
-                        </div>
-                        <div>
-                            <div class="text-4xl font-bold text-blue-600 mb-2">24/7</div>
-                            <div class="text-gray-600">Service d'urgence</div>
-                        </div>
-                        <div>
-                            <div class="text-4xl font-bold text-blue-600 mb-2">100%</div>
-                            <div class="text-gray-600">Techniciens certifiés</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Nos services</p>
+          <h2>Deux pôles d'expertise, une même exigence de qualité</h2>
+          <p>Chaque installation est pensée pour la performance, la fiabilité et la continuité d'exploitation.</p>
         </div>
+
+        <div class="services-grid">
+          <article class="service-card service-card-dark">
+            <div class="service-visual">
+              <img src="assets/hero-clim.webp" alt="Climatiseur mural installé">
+            </div>
+            <div class="service-content">
+              <h3>Climatisation</h3>
+              <p>Installation, dépannage et entretien de climatiseurs pour garantir confort, rendement et sérénité d'utilisation.</p>
+              <ul>
+                <li>Pose de systèmes split et muraux</li>
+                <li>Maintenance préventive et nettoyage</li>
+                <li>Dépannage et remise en service</li>
+                <li>Conseil sur la performance énergétique</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual">
+              <img src="assets/kitchen-line.webp" alt="Cuisine professionnelle inox">
+            </div>
+            <div class="service-content">
+              <h3>Cuisines professionnelles & froid commercial</h3>
+              <p>Accompagnement technique pour les cuisines de restaurants, laboratoires, commerces alimentaires et établissements exigeants.</p>
+              <ul>
+                <li>Installation d'équipements de cuisine professionnelle</li>
+                <li>Chambres froides et froid commercial</li>
+                <li>Maintenance et contrats d'entretien</li>
+                <li>Dépannage sur équipements techniques</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                    Contactez-nous
-                </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Besoin d'une installation, d'un dépannage ou d'un entretien ? Nous sommes à votre écoute !
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <!-- Contact Card 1 -->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="phone" class="w-7 h-7 text-blue-600"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Téléphone</h3>
-                    <a href="tel:0640140733" class="text-blue-600 font-semibold text-lg hover:underline">
-                        06 40 14 07 33
-                    </a>
-                    <p class="text-sm text-gray-500 mt-2">Disponible 24/7</p>
-                </div>
-
-                <!-- Contact Card 2 -->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="mail" class="w-7 h-7 text-blue-600"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Email</h3>
-                    <a href="mailto:contact@technifroidcuisine.fr" class="text-blue-600 font-semibold hover:underline break-all">
-                        contact@technifroidcuisine.fr
-                    </a>
-                    <p class="text-sm text-gray-500 mt-2">Réponse sous 24h</p>
-                </div>
-
-                <!-- Contact Card 3 -->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="map-pin" class="w-7 h-7 text-blue-600"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Zone</h3>
-                    <p class="text-gray-700 font-semibold">Région PACA</p>
-                    <p class="text-sm text-gray-500 mt-2">Basé à Aix-en-Provence</p>
-                </div>
-
-                <!-- Contact Card 4 -->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="clock" class="w-7 h-7 text-blue-600"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Horaires</h3>
-                    <p class="text-gray-700 font-semibold">7j/7 - 24h/24</p>
-                    <p class="text-sm text-gray-500 mt-2">Urgences acceptées</p>
-                </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Demande de devis gratuit</h3>
-                <p class="text-gray-600 mb-6">Remplissez le formulaire et nous vous recontacterons rapidement</p>
-                
-                <form id="contact-form" class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div class="space-y-2">
-                            <label for="name" class="text-sm font-medium text-gray-700">Nom complet *</label>
-                            <input type="text" id="name" name="name" required
-                                   class="w-full h-10 px-3 rounded-md border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
-                                   placeholder="Votre nom">
-                        </div>
-                        <div class="space-y-2">
-                            <label for="phone" class="text-sm font-medium text-gray-700">Téléphone *</label>
-                            <input type="tel" id="phone" name="phone" required
-                                   class="w-full h-10 px-3 rounded-md border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
-                                   placeholder="06 12 34 56 78">
-                        </div>
-                    </div>
-                    
-                    <div class="space-y-2">
-                        <label for="email" class="text-sm font-medium text-gray-700">Email *</label>
-                        <input type="email" id="email" name="email" required
-                               class="w-full h-10 px-3 rounded-md border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
-                               placeholder="votre@email.com">
-                    </div>
-
-                    <div class="space-y-2">
-                        <label for="service" class="text-sm font-medium text-gray-700">Type de service *</label>
-                        <select id="service" name="service" required
-                                class="w-full h-10 px-3 rounded-md border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none">
-                            <option value="">Sélectionnez un service...</option>
-                            <optgroup label="Climatisation">
-                                <option value="clim-install">Installation climatisation</option>
-                                <option value="clim-depannage">Dépannage climatisation</option>
-                                <option value="clim-entretien">Entretien climatisation</option>
-                            </optgroup>
-                            <optgroup label="Cuisines Professionnelles">
-                                <option value="cuisine-install">Installation équipement</option>
-                                <option value="cuisine-depannage">Dépannage équipement</option>
-                                <option value="cuisine-entretien">Entretien équipement</option>
-                                <option value="cuisine-froid">Chambre froide</option>
-                            </optgroup>
-                        </select>
-                    </div>
-
-                    <div class="space-y-2">
-                        <label for="message" class="text-sm font-medium text-gray-700">Décrivez votre besoin *</label>
-                        <textarea id="message" name="message" required rows="5"
-                                  class="w-full px-3 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
-                                  placeholder="Décrivez votre projet ou problème en détail..."></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full h-12 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors text-lg">
-                        Envoyer ma demande
-                    </button>
-                    
-                    <p class="text-xs text-gray-500 text-center">
-                        En envoyant ce formulaire, vous acceptez d'être recontacté par TechniFroid&Cuisine
-                    </p>
-                </form>
-            </div>
+    <section class="highlight">
+      <div class="container highlight-grid">
+        <div>
+          <p class="eyebrow">Pourquoi nous choisir</p>
+          <h2>Un site technique premium doit inspirer la même confiance que votre intervention sur le terrain.</h2>
         </div>
+        <div class="highlight-cards">
+          <article>
+            <strong>Diagnostic précis</strong>
+            <p>Nous ciblons la bonne solution, sans surpromesse ni bricolage.</p>
+          </article>
+          <article>
+            <strong>Matériel valorisé</strong>
+            <p>Chaque projet est présenté avec une image professionnelle et crédible.</p>
+          </article>
+          <article>
+            <strong>Suivi durable</strong>
+            <p>Entretien, dépannage et continuité d'exploitation sur le long terme.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-                <!-- Column 1 -->
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                            <i data-lucide="wind" class="w-9 h-9 text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white">TechniFroid&Cuisine</h3>
-                    </div>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Votre expert en installation, dépannage et entretien de climatisation 
-                        et équipements de cuisines professionnelles en région PACA.
-                    </p>
-                    <div class="flex space-x-4 pt-2">
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors" aria-label="Facebook">
-                            <i data-lucide="facebook" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors" aria-label="LinkedIn">
-                            <i data-lucide="linkedin" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors" aria-label="Instagram">
-                            <i data-lucide="instagram" class="w-5 h-5"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Column 2 -->
-                <div>
-                    <h4 class="font-semibold mb-4 text-lg">Navigation</h4>
-                    <ul class="space-y-3 text-gray-400 text-sm">
-                        <li><a href="#accueil" class="hover:text-blue-400 transition-colors">Accueil</a></li>
-                        <li><a href="#services" class="hover:text-blue-400 transition-colors">Nos Services</a></li>
-                        <li><a href="#apropos" class="hover:text-blue-400 transition-colors">À propos</a></li>
-                        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3 -->
-                <div>
-                    <h4 class="font-semibold mb-4 text-lg">Nos Services</h4>
-                    <ul class="space-y-3 text-gray-400 text-sm">
-                        <li><a href="#services" class="hover:text-blue-400 transition-colors">Climatisation</a></li>
-                        <li><a href="#services" class="hover:text-blue-400 transition-colors">Cuisines professionnelles</a></li>
-                        <li><a href="#services" class="hover:text-blue-400 transition-colors">Installation</a></li>
-                        <li><a href="#services" class="hover:text-blue-400 transition-colors">Dépannage 24/7</a></li>
-                        <li><a href="#services" class="hover:text-blue-400 transition-colors">Entretien & Maintenance</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4 -->
-                <div>
-                    <h4 class="font-semibold mb-4 text-lg">Contact</h4>
-                    <ul class="space-y-3 text-gray-400 text-sm">
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="phone" class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5"></i>
-                            <div>
-                                <a href="tel:0640140733" class="hover:text-blue-400 transition-colors font-semibold">
-                                    06 40 14 07 33
-                                </a>
-                                <p class="text-xs text-gray-500">Disponible 24/7</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="mail" class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5"></i>
-                            <div>
-                                <a href="mailto:contact@technifroidcuisine.fr" class="hover:text-blue-400 transition-colors break-all">
-                                    contact@technifroidcuisine.fr
-                                </a>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5"></i>
-                            <div>
-                                <p>Aix-en-Provence</p>
-                                <p class="text-xs text-gray-500">Région PACA</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-gray-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-                    <p>&copy; <span id="current-year"></span> TechniFroid&Cuisine. Tous droits réservés.</p>
-                    <div class="flex gap-4">
-                        <span class="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-xs font-semibold">
-                            Certifié RGE QualiPAC
-                        </span>
-                    </div>
-                </div>
-            </div>
+    <section id="realisations" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Réalisations</p>
+          <h2>Des environnements propres, techniques et performants</h2>
+          <p>Quelques visuels représentatifs de vos univers d'intervention : climatisation, cuisines inox, chambres froides et maintenance.</p>
         </div>
-    </footer>
 
-    <!-- JavaScript -->
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
+        <div class="gallery-grid">
+          <figure class="gallery-card gallery-large">
+            <img src="assets/hero-kitchen.webp" alt="Grande cuisine professionnelle haut de gamme">
+            <figcaption>Cuisine professionnelle</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/cold-room.webp" alt="Chambre froide avec rayonnages">
+            <figcaption>Chambre froide</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/living-ac.webp" alt="Climatiseur design dans un salon">
+            <figcaption>Climatisation</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/project-bar.webp" alt="Bar professionnel et équipements">
+            <figcaption>Espaces CHR</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/repair.webp" alt="Technicien en intervention sur un climatiseur">
+            <figcaption>Maintenance & SAV</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/project-kitchen.webp" alt="Cuisine professionnelle en exploitation">
+            <figcaption>Intervention technique</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-        // Set current year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+    <section id="zone" class="section">
+      <div class="container zone-grid">
+        <div class="zone-copy">
+          <p class="eyebrow">Zone d'intervention</p>
+          <h2>Basé à Aix-en-Provence, intervention dans toute la région PACA</h2>
+          <p>TechniFroid&amp;Cuisine intervient auprès des restaurants, commerces, établissements professionnels et particuliers, avec une approche rapide, soignée et orientée résultat.</p>
+          <div class="chips">
+            <span>Aix-en-Provence</span>
+            <span>Marseille</span>
+            <span>Salon-de-Provence</span>
+            <span>Avignon</span>
+            <span>Toute la PACA</span>
+          </div>
+        </div>
+        <div class="zone-panel">
+          <h3>Prestations couvertes</h3>
+          <ul>
+            <li>Installation de climatiseurs</li>
+            <li>Dépannage sur systèmes de climatisation</li>
+            <li>Entretien préventif</li>
+            <li>Équipements de cuisines professionnelles</li>
+            <li>Chambres froides et froid commercial</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const icon = mobileMenuBtn.querySelector('[data-lucide]');
-            const iconName = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
-            icon.setAttribute('data-lucide', iconName);
-            lucide.createIcons();
-        });
+    <section class="cta-strip">
+      <div class="container cta-strip-inner">
+        <div>
+          <p class="eyebrow">Besoin d'une intervention ?</p>
+          <h2>Parlons de votre installation, de votre panne ou de votre maintenance.</h2>
+        </div>
+        <div class="cta-strip-actions">
+          <a class="btn btn-primary" href="tel:0640140733">Appeler</a>
+          <a class="btn btn-secondary dark" href="mailto:contact@technifroidcuisine.fr">Envoyer un email</a>
+        </div>
+      </div>
+    </section>
 
-        // Close mobile menu when clicking on links
-        document.querySelectorAll('.mobile-menu-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                const icon = mobileMenuBtn.querySelector('[data-lucide]');
-                icon.setAttribute('data-lucide', 'menu');
-                lucide.createIcons();
-            });
-        });
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Un besoin immédiat ou un projet à chiffrer ?</h2>
+          <p>Appelez directement ou écrivez-nous. Nous reviendrons vers vous rapidement pour étudier votre demande.</p>
+          <div class="contact-list">
+            <a href="tel:0640140733"><span>Téléphone</span><strong>06 40 14 07 33</strong></a>
+            <a href="mailto:contact@technifroidcuisine.fr"><span>Email</span><strong>contact@technifroidcuisine.fr</strong></a>
+            <div><span>Localisation</span><strong>Aix-en-Provence · PACA</strong></div>
+          </div>
+        </div>
 
-        // Services tabs
-        const tabClimatisation = document.getElementById('tab-climatisation');
-        const tabCuisine = document.getElementById('tab-cuisine');
-        const servicesClimatisation = document.getElementById('services-climatisation');
-        const servicesCuisine = document.getElementById('services-cuisine');
+        <div class="contact-card">
+          <h3>Demande de devis</h3>
+          <p>Le plus simple est de nous appeler ou de nous écrire avec le type d'équipement et votre secteur.</p>
+          <a class="btn btn-primary wide" href="tel:0640140733">Appeler maintenant</a>
+          <a class="btn btn-secondary wide" href="mailto:contact@technifroidcuisine.fr?subject=Demande%20de%20devis%20TechniFroid%26Cuisine">Envoyer un email</a>
+          <small>Site conçu pour une mise en ligne rapide sur GitHub Pages.</small>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        tabClimatisation.addEventListener('click', () => {
-            tabClimatisation.classList.add('bg-blue-600', 'text-white', 'shadow-md');
-            tabClimatisation.classList.remove('text-gray-600', 'hover:text-gray-900');
-            tabCuisine.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
-            tabCuisine.classList.add('text-gray-600', 'hover:text-gray-900');
-            
-            servicesClimatisation.classList.remove('hidden');
-            servicesCuisine.classList.add('hidden');
-        });
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>TechniFroid&amp;Cuisine</strong>
+        <p>Installation, dépannage et entretien de climatiseurs, cuisines professionnelles et froid commercial en région PACA.</p>
+      </div>
+      <div>
+        <a href="tel:0640140733">06 40 14 07 33</a>
+        <a href="mailto:contact@technifroidcuisine.fr">contact@technifroidcuisine.fr</a>
+        <span>Aix-en-Provence · PACA</span>
+      </div>
+    </div>
+  </footer>
 
-        tabCuisine.addEventListener('click', () => {
-            tabCuisine.classList.add('bg-blue-600', 'text-white', 'shadow-md');
-            tabCuisine.classList.remove('text-gray-600', 'hover:text-gray-900');
-            tabClimatisation.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
-            tabClimatisation.classList.add('text-gray-600', 'hover:text-gray-900');
-            
-            servicesCuisine.classList.remove('hidden');
-            servicesClimatisation.classList.add('hidden');
-        });
-
-        // Contact form submission
-        document.getElementById('contact-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Merci pour votre demande ! Nous vous contacterons rapidement pour établir votre devis.');
-            e.target.reset();
-        });
-
-        // Smooth scroll with offset for fixed header
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerHeight = document.getElementById('header').offsetHeight;
-                    const targetPosition = target.offsetTop - headerHeight;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle?.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle?.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 </body>
 </html>
